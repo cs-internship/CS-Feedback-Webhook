@@ -54,15 +54,15 @@ const buildAdminLogMessage = (
         ``,
         `<b>تاریخ و زمان:</b> ${dateTime}`,
         `<b>آیدی بازخورد:</b> <code>${sessionId}</code>`,
-        ``,
-        `<b>میانگین امتیاز:</b> <b>${score.toFixed(2)}</b> ${statusIcon}`,
-        hasWrittenAnswers ? `` : null,
-        hasWrittenAnswers ? writtenAnswersText : null,
+        // ``,
+        // `<b>میانگین امتیاز:</b> <b>${score.toFixed(2)}</b> ${statusIcon}`,
+        // hasWrittenAnswers ? `` : null,
+        // hasWrittenAnswers ? writtenAnswersText : null,
         ``,
         `🔗 <a href="${notionLink}">مشاهده در دیتابیس</a>`,
         ``,
         `#لاگ_بازخورد`,
-        `${statusTag}`,
+        // `${statusTag}`,
     ]
         .filter((line) => line !== null)
         .join("\n");
